@@ -1,0 +1,217 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;University Enrollment System - Web UI Code
+This document contains the complete HTML and CSS code for the simple and formal University Enrollment System web interface.
+style.css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+
+  color: #333;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #003b8e;
+}
+
+.btn-secondary:hover {
+  background-color: #e6e6e6;
+}
+student_registration.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Registration</h1>
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
+
+      <label>Student ID</label>
+      <input type="text" placeholder="Enter student ID" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="Enter password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm password" required>
+
+      <label>Program/Major</label>
+      <select required>
+        <option value="">Select a program</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Engineering</option>
+        <option>Business Administration</option>
+      </select>
+
+      <div class="buttons">
+        <button type="submit" class="btn-primary">Submit</button>
+        <button type="reset" class="btn-secondary">Clear</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+course_selection.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Course Selection</h1>
+    <form>
+      <label>Student Name</label>
+      <input type="text" placeholder="Enter your name" required>
+
+      <label>Student ID</label>
+      <input type="text" placeholder="Enter your ID" required>
+
+      <label>Department</label>
+      <select required>
+        <option value="">Select Department</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Engineering</option>
+        <option>Business Administration</option>
+      </select>
+
+      <label>Available Courses</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Introduction to Programming</label>
+        <label><input type="checkbox"> Data Structures</label>
+        <label><input type="checkbox"> Database Systems</label>
+        <label><input type="checkbox"> Web Development</label>
+        <label><input type="checkbox"> Software Engineering</label>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="btn-primary">Enroll</button>
+        <button type="reset" class="btn-secondary">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+scholarship_application.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarship Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Scholarship Application</h1>
+    <form>
+      <label>Student Name</label>
+      <input type="text" placeholder="Enter your name" required>
+
+      <label>Student ID</label>
+      <input type="text" placeholder="Enter your ID" required>
+
+      <label>Select Scholarship</label>
+      <select required>
+        <option value="">Choose Scholarship</option>
+        <option>Academic Excellence Scholarship</option>
+        <option>Financial Assistance Grant</option>
+        <option>Sports Scholarship</option>
+        <option>Leadership Award</option>
+      </select>
+
+      <label>GPA</label>
+      <input type="text" placeholder="Enter your GPA" required>
+
+      <label>Annual Family Income</label>
+      <input type="text" placeholder="Enter family income" required>
+
+      <label>Upload Supporting Documents</label>
+      <input type="file" required>
+
+      <div class="buttons">
+        <button type="submit" class="btn-primary">Submit Application</button>
+        <button type="reset" class="btn-secondary">Clear</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

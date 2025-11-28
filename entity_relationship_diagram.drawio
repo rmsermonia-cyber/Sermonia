@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="ERD1" name="Entity Relationship Diagram">
+    <mxGraphModel dx="827" dy="540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Students Entity -->
+        <mxCell id="2" value="STUDENTS&#xa;PK student_id&#xa;first_name&#xa;last_name&#xa;date_of_birth&#xa;email&#xa;major_id (FK)" style="shape=swimlane;childLayout=stackLayout;horizontal=1;rounded=0;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Majors Entity -->
+        <mxCell id="3" value="MAJORS&#xa;PK major_id&#xa;major_name&#xa;department&#xa;required_credits" style="shape=swimlane;childLayout=stackLayout;horizontal=1;rounded=0;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="180" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Enrollment Entity -->
+        <mxCell id="4" value="ENROLLMENT&#xa;PK enrollment_id&#xa;student_id (FK)&#xa;course_id (FK)&#xa;semester&#xa;year&#xa;grade" style="shape=swimlane;childLayout=stackLayout;horizontal=1;rounded=0;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="250" y="300" width="200" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Courses Entity -->
+        <mxCell id="5" value="COURSES&#xa;PK course_id&#xa;course_name&#xa;course_code&#xa;credits&#xa;department_id (FK)" style="shape=swimlane;childLayout=stackLayout;horizontal=1;rounded=0;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="550" y="300" width="200" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" source="2" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" source="3" target="2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" source="4" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
