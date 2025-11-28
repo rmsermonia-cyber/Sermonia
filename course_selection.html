@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Course Selection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="student_registration.html">Student Registration</a>
+<a href="course_selection.html">Course Selection</a>
+<a href="scholarship_application.html">Scholarship Application</a>
+</nav>
+
+<div class="container">
+<h1>Course Selection</h1>
+
+<form>
+<label>Student Name</label>
+<input type="text" required>
+
+<label>Student ID</label>
+<input type="text" required>
+
+<label>Department</label>
+<select required>
+<option value="">Select Department</option>
+<option>Computer Science</option>
+<option>Information Technology</option>
+<option>Engineering</option>
+<option>Business Administration</option>
+</select>
+
+<label>Available Courses</label>
+<div class="checkbox-group">
+<label><input type="checkbox"> Introduction to Programming</label>
+<label><input type="checkbox"> Data Structures</label>
+<label><input type="checkbox"> Database Systems</label>
+<label><input type="checkbox"> Web Development</label>
+<label><input type="checkbox"> Software Engineering</label>
+</div>
+
+<div class="buttons">
+<button class="btn-primary">Enroll</button>
+<button type="reset" class="btn-secondary">Cancel</button>
+</div>
+</form>
+</div>
+
+<footer>© 2025 University Enrollment System. All Rights Reserved.</footer>
+
+</body>
+</html>

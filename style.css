@@ -1,0 +1,109 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #fff;
+margin: 0;
+padding: 0;
+}
+
+/* Navigation bar */
+nav {
+background-color: #004aad;
+color: white;
+padding: 15px;
+text-align: center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Main Card */
+.container {
+width: 400px;
+margin: 50px auto;
+padding: 30px;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-shadow: 0 0 8px rgba(0,0,0,0.1);
+background-color: #fff;
+}
+
+h1 {
+text-align: center;
+color: #004aad;
+margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-top: 10px;
+font-weight: bold;
+color: #333;
+}
+
+input, select {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-top: 5px;
+}
+
+/* Checkboxes */
+.checkbox-group {
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+}
+
+/* Buttons */
+.buttons {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.btn-primary {
+background-color: #004aad;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.btn-primary:hover {
+background-color: #003b8e;
+}
+
+.btn-secondary {
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.btn-secondary:hover {
+background-color: #e6e6e6;
+}
+
+/* Footer */
+footer {
+text-align: center;
+margin: 40px 0;
+color: #777;
+font-size: 14px;
+}
+
